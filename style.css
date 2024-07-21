@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--offWhite);
+}
+main{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 8rem;
+    width: clamp(35rem, calc(100% - 40px), 38rem);
+}
+.formContainer{
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 2rem 0;
+}
+#dayInput,
+#monthInput,
+#yearInput{
+    padding: 0.5rem;
+    width: 9rem;
+    border-radius: 5px;
+    border: 1.5px solid var(--lightGrey);
+    outline: none;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: var(--purple);
+    cursor: pointer;
+    margin: 0 0 2rem 0;
+}
+image{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-size: 4rem;
+}
+p span{
+    color: var(--purple);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
