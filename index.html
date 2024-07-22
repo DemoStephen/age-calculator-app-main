@@ -9,19 +9,19 @@
 </head>
 <body>
   <main>
-    <form action="#">
+    <form data-form action="#">
       <div class="formContainer">
         <label for="dayInput">
           <span>Day</span>
-          <input type="number" name="day" id="dayInput">
+          <input data-dayInput type="number" name="day" id="dayInput" max="31" min="1">
         </label>
         <label for="monthInput">
           <span>Month</span>
-          <input type="number" name="month" id="monthInput">
+          <input data-monthInput type="number" name="month" id="monthInput" max="12" min="1">
         </label>
         <label for="monthInput">
           <span>Year</span>
-          <input type="number" name="year" id="yearInput">
+          <input data-yearInput type="number" name="year" id="yearInput" max="2023" min="1900">
         </label>
       </div>
       <div id="submitBtn">
@@ -30,9 +30,9 @@
       </div>
     </form>
     <div class="formOutput">
-      <p><span>--</span> years</p>
-      <p><span>--</span> months</p>
-      <p><span>--</span> days</p>
+      <p><span data-yearOutput>--</span> years</p>
+      <p><span data-monthOutput>--</span> months</p>
+      <p><span data-dayOutput>--</span> days</p>
     </div>
   </main>
   
