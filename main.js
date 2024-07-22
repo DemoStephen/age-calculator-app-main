@@ -19,6 +19,12 @@ formElement.addEventListener('submit', (event)=>{
         yearCalculations ++ 
         monthCalculations -=12
     }
+    if(monthInput.value == 2){
+        dayCalculations = 27 - dayInput.value
+    }
+    if(monthInput.value == 4 || monthInput.value == 6 || monthInput.value == 8 || monthInput.value == 10){
+        dayCalculations = 30 - dayInput.value
+    }
     dayOutput.innerText = `${dayCalculations}`
     monthOutput.innerText = `${monthCalculations}`
     yearOutput.innerText = `${yearCalculations}`

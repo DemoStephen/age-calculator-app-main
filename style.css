@@ -56,6 +56,7 @@ label{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 button{
     width: 4rem;
@@ -91,6 +92,7 @@ p{
 p span{
     color: var(--purple);
 }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 input::-webkit-outer-spin-button,
