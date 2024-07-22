@@ -42,6 +42,12 @@ main{
     margin: 0 0 2rem 0;
     gap: 1rem;
 }
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
 #dayInput,
 #monthInput,
 #yearInput{
@@ -49,12 +55,6 @@ main{
     border-radius: 5px;
     border: 1.5px solid var(--lightGrey);
     outline: none;
-    width: 100%;
-}
-label{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
     width: 100%;
 }
 button{
